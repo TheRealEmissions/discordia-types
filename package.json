@@ -1,6 +1,6 @@
 {
   "name": "ts-modular-bot-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Types for TS Modular Bot Series",
   "main": "Types.ts",
   "scripts": {
