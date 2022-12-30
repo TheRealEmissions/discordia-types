@@ -1,2 +1,3 @@
 import { Dependency } from "./Dependency";
-export { Dependency };
+import * as Decorators from "./Decorators";
+export { Dependency, Decorators };
