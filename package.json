@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/TheRealEmissions/ts-modular-bot-types/issues"
   },
-  "homepage": "https://github.com/TheRealEmissions/ts-modular-bot-types#readme"
+  "homepage": "https://github.com/TheRealEmissions/ts-modular-bot-types#readme",
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  }
 }
