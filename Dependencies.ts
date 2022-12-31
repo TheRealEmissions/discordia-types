@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import { Dependency } from "./Dependency";
+import { Dependency } from "./Dependency.js";
 
 export interface InjectWith {
   injectWith: Dependency | null;

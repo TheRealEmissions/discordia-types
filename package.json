@@ -2,7 +2,7 @@
   "name": "ts-modular-bot-types",
   "version": "1.0.1",
   "description": "Types for TS Modular Bot Series",
-  "main": "Types.ts",
+  "main": "out/Types.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +18,6 @@
   "homepage": "https://github.com/TheRealEmissions/ts-modular-bot-types#readme",
   "dependencies": {
     "reflect-metadata": "^0.1.13"
-  }
+  },
+  "types": "out/types/Types.d.ts"
 }
