@@ -19,5 +19,6 @@
   "dependencies": {
     "reflect-metadata": "^0.1.13"
   },
-  "types": "out/types/Types.d.ts"
+  "types": "out/types/Types.d.ts",
+  "type": "module"
 }
