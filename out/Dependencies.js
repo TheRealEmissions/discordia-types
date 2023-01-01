@@ -1,5 +1,5 @@
 import "reflect-metadata";
-export const vars = new Map();
+export const vars = [];
 export function inject(type) {
     console.log("Injecting ", type);
     return function (target, key) {
@@ -12,14 +12,7 @@ export function inject(type) {
         });
         console.log("REFLECT DATA");
         console.log(data);
-        const entry = vars.get(target.type);
-        if (!entry) {
-            vars.set(target.type, [[target, key]]);
-        }
-        else {
-            entry.push([target, key]);
-            vars.set(target.type, entry);
-        }
+        vars.push([target, key]);
         console.log("VARS");
         console.log(vars);
     };
