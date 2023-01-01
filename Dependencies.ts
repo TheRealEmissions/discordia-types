@@ -13,7 +13,9 @@ const vars: Map<Dependency, string> = new Map();
 
 export function inject(type: Dependency) {
   return function (target: any, key: string): void {
+    console.log("TARGET");
     console.log(target);
+    console.log("KEY");
     console.log(key);
     if (!Reflect.hasMetadata(key, target)) {
       Reflect.defineMetadata(key, {}, target);
