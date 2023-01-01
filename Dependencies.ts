@@ -1,6 +1,6 @@
 import "reflect-metadata";
 import { Dependency } from "./Dependency.js";
-import HeadFile from "../classes/FileDesign/Base.js";
+import { HeadFile } from "ts-modular-bot-file-design";
 
 export interface InjectWith {
   injectWith: Dependency | null;

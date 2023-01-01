@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/TheRealEmissions/ts-modular-bot-types#readme",
   "dependencies": {
-    "reflect-metadata": "^0.1.13"
+    "reflect-metadata": "^0.1.13",
+    "ts-modular-bot-file-design": "github:therealemissions/ts-modular-bot-file-design"
   },
   "types": "out/types/Types.d.ts",
   "type": "module"
