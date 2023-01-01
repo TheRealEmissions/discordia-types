@@ -28,12 +28,12 @@ export function inject(type: Dependency) {
     );
     console.log("REFLECT DATA");
     console.log(data);
-    const entry = vars.get(type);
+    const entry = vars.get(target.type);
     if (!entry) {
-      vars.set(type, [[target, key]]);
+      vars.set(target.type, [[target, key]]);
     } else {
       entry.push([target, key]);
-      vars.set(type, entry);
+      vars.set(target.type, entry);
     }
     console.log("VARS");
     console.log(vars);
