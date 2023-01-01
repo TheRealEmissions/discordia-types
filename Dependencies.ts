@@ -31,7 +31,6 @@ export function inject(type: Dependency) {
     const entry = vars.get(type);
     if (!entry) {
       vars.set(type, [[target, key]]);
-      return;
     } else {
       entry.push([target, key]);
       vars.set(type, entry);
