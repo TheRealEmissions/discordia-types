@@ -21,5 +21,7 @@ export function inject(type) {
             entry.push([target, key]);
             vars.set(type, entry);
         }
+        console.log("VARS");
+        console.log(vars);
     };
 }

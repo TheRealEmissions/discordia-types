@@ -36,5 +36,7 @@ export function inject(type: Dependency) {
       entry.push([target, key]);
       vars.set(type, entry);
     }
+    console.log("VARS");
+    console.log(vars);
   };
 }
