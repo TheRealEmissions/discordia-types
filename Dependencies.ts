@@ -13,6 +13,7 @@ interface Inject {
 export const vars: Map<Dependency, [HeadFile, string][]> = new Map();
 
 export function inject(type: Dependency) {
+  console.log("Injecting ", type);
   return function (target: any, key: string): void {
     if (!Reflect.hasMetadata(key, target)) {
       Reflect.defineMetadata(key, {}, target);
