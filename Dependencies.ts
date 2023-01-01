@@ -1,5 +1,6 @@
 import "reflect-metadata";
 import { Dependency } from "./Dependency.js";
+import HeadFile from "../classes/FileDesign/Base.js";
 
 export interface InjectWith {
   injectWith: Dependency | null;
@@ -9,14 +10,10 @@ interface Inject {
   [t: string]: InjectWith;
 }
 
-const vars: Map<Dependency, string> = new Map();
+export const vars: Map<Dependency, [HeadFile, string][]> = new Map();
 
 export function inject(type: Dependency) {
   return function (target: any, key: string): void {
-    console.log("TARGET");
-    console.log(target);
-    console.log("KEY");
-    console.log(key);
     if (!Reflect.hasMetadata(key, target)) {
       Reflect.defineMetadata(key, {}, target);
     }
@@ -28,5 +25,13 @@ export function inject(type: Dependency) {
         injectWith: type,
       }
     );
+    const entry = vars.get(type);
+    if (!entry) {
+      vars.set(type, [[target, key]]);
+      return;
+    } else {
+      entry.push([target, key]);
+      vars.set(type, entry);
+    }
   };
 }
