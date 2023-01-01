@@ -9,6 +9,8 @@ export function inject(type) {
         data[key] = Object.assign({}, { injectWith: null }, {
             injectWith: type,
         });
+        console.log("REFLECT DATA");
+        console.log(data);
         const entry = vars.get(type);
         if (!entry) {
             vars.set(type, [[target, key]]);

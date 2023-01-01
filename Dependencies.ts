@@ -25,6 +25,8 @@ export function inject(type: Dependency) {
         injectWith: type,
       }
     );
+    console.log("REFLECT DATA");
+    console.log(data);
     const entry = vars.get(type);
     if (!entry) {
       vars.set(type, [[target, key]]);
