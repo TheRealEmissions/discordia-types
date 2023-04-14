@@ -1,6 +1,6 @@
 import "reflect-metadata";
 import { Dependency } from "./Dependency.js";
-import { HeadFile } from "ts-modular-bot-file-design";
+import Base from "ts-modular-bot-file-design";
 
 export interface InjectWith {
   injectWith: Dependency | null;
@@ -10,7 +10,7 @@ interface Inject {
   [t: string]: InjectWith;
 }
 
-export const vars: [HeadFile, string][] = [];
+export const vars: [Base, string][] = [];
 
 export function inject(type: Dependency) {
   console.log("Injecting ", type);

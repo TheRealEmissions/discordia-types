@@ -10,10 +10,6 @@ export function inject(type) {
         data[key] = Object.assign({}, { injectWith: null }, {
             injectWith: type,
         });
-        console.log("REFLECT DATA");
-        console.log(data);
         vars.push([target, key]);
-        console.log("VARS");
-        console.log(vars);
     };
 }
