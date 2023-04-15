@@ -21,5 +21,13 @@
     "rootDir": "."
   },
   "include": ["./**/*"],
-  "exclude": ["./node_modules/**/*", "*/out/**/*", "*/node_modules/**/*", "*/package-lock.json", "./addons", "./classes"]
+  "exclude": [
+    "./node_modules/**/*",
+    "*/out/**/*",
+    "*/node_modules/**/*",
+    "*/package-lock.json",
+    "./addons",
+    "./classes",
+    "./out/types/**/*"
+  ]
 }

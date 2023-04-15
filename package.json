@@ -2,7 +2,7 @@
   "name": "ts-modular-bot-types",
   "version": "1.0.1",
   "description": "Types for TS Modular Bot Series",
-  "main": "out/Types.js",
+  "main": "./out/Types.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
