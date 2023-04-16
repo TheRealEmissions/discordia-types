@@ -4,4 +4,5 @@ export enum Dependency {
   EVENTS,
   DISCORD_RESPONDER,
   GENERAL_COMMANDS,
+  DATABASE,
 }
