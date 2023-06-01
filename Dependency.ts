@@ -3,6 +3,6 @@ export enum Dependency {
   DISCORD_CLIENT,
   EVENTS,
   DISCORD_RESPONDER,
+  GENERAL_COMMANDS,
   DATABASE,
-  WELCOME,
 }

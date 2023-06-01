@@ -3,6 +3,6 @@ export declare enum Dependency {
     DISCORD_CLIENT = 1,
     EVENTS = 2,
     DISCORD_RESPONDER = 3,
-    DATABASE = 4,
-    WELCOME = 5
+    GENERAL_COMMANDS = 4,
+    DATABASE = 5
 }
