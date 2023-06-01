@@ -1,21 +1,21 @@
 {
-  "name": "ts-modular-bot-types",
+  "name": "ada-types",
   "version": "1.0.1",
-  "description": "Types for TS Modular Bot Series",
+  "description": "Forked from Discordia-types, provides types for Ada",
   "main": "./out/Types.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheRealEmissions/ts-modular-bot-types.git"
+    "url": "git+https://github.com/TheRealEmissions/ada-types.git"
   },
   "author": "Emissions#2565",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TheRealEmissions/ts-modular-bot-types/issues"
+    "url": "https://github.com/TheRealEmissions/ada-types/issues"
   },
-  "homepage": "https://github.com/TheRealEmissions/ts-modular-bot-types#readme",
+  "homepage": "https://github.com/TheRealEmissions/ada-types#readme",
   "dependencies": {
     "reflect-metadata": "^0.1.13",
     "ts-modular-bot-file-design": "github:therealemissions/ts-modular-bot-file-design"
